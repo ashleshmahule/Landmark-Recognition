@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".DescriptionActivity">
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#CD000000"
+        android:id="@+id/name"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="88dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="1dp"
+        android:text="View on Map"
+        android:padding="2dp"
+        android:id="@+id/openMap"
+        android:layout_marginTop="8dp"
+        android:textAllCaps="false"
+        android:textSize="13sp"
+        android:layout_below="@id/location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/button3" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/state"
+        android:textSize="22sp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:textSize="22sp"
+        android:id="@+id/location"
+        android:layout_below="@+id/state"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="24dp"
+        android:text="Description of Monument: "
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="26sp"
+        android:layout_below="@id/openMap"
+        android:id="@+id/deschead" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:layout_margin="12dp"
+        android:layout_below="@+id/deschead" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewHead"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:text="User Reviews"
+        android:layout_below="@id/description"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="2dp"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:fillViewport="true"
+        android:layout_marginTop="2dp"
+        android:layout_above="@id/addRev"
+        android:background="#FFFFFF"
+        android:layout_below="@id/reviewHead">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reviews" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="10"
+        android:id="@+id/addRev"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:id="@+id/userReview"
+            android:inputType="text"
+            android:layout_weight="8"
+            android:hint="Add your review here" />
+
+        <Button
+            android:layout_width="55dp"
+            android:layout_margin="12dp"
+            android:layout_height="42dp"
+            android:layout_weight="2"
+            android:id="@+id/add"
+            android:background="@drawable/send" />
+    </LinearLayout>
+
+</RelativeLayout>

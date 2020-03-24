@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "507022430497",
+    "firebase_url": "https://virtualguide-c568c.firebaseio.com",
+    "project_id": "virtualguide-c568c",
+    "storage_bucket": "virtualguide-c568c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507022430497:android:66bc359812a30412006e60",
+        "android_client_info": {
+          "package_name": "com.example.vtg_stech20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507022430497-4gcvohlfmltegi53b514mjg0j6ieegl5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPdtVU28lIovDWL5uihd9xU-QFydZbY0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507022430497-4gcvohlfmltegi53b514mjg0j6ieegl5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

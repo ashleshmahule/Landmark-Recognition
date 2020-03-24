@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/label"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="4dp"
+    android:textSize="15sp"
+    android:layout_margin="2dp"
+    android:drawablePadding="4dp"
+    android:layout_centerVertical="true"
+    android:drawableLeft="@drawable/circle">
+</TextView>
