@@ -11,3 +11,4 @@ All the four layers use "relu" activation and the hidden layer uses "softmax".
 
 # The Dataset
 It will be uploaded shortly.
+(P.S. You can use your own dataset also)
