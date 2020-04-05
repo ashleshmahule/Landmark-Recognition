@@ -18,6 +18,8 @@
         android:textAlignment="center"
         android:layout_centerHorizontal="true" />
 
+
+
     <Button
         android:layout_width="88dp"
         android:layout_height="32dp"
@@ -75,23 +77,42 @@
 
 
     <TextView
+        android:id="@+id/reviewHead"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/reviewHead"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:text="User Reviews"
         android:layout_below="@id/description"
-        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
         android:layout_marginBottom="2dp"
-        android:layout_centerHorizontal="true" />
+        android:text="User Reviews"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/heartEn"
+        android:layout_width="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_height="24dp"
+        android:layout_toEndOf="@id/reviewHead"
+        android:layout_below="@id/description"
+        android:background="@drawable/hearten" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heartEn"
+        android:textSize="12sp"
+        android:layout_marginLeft="11dp"
+        android:layout_toEndOf="@id/reviewHead"
+        android:id="@+id/likes" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:layout_centerHorizontal="true"
         android:fillViewport="true"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="3dp"
         android:layout_above="@id/addRev"
         android:background="#FFFFFF"
         android:layout_below="@id/reviewHead">
@@ -104,29 +125,44 @@
     </ScrollView>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:weightSum="10"
+        android:layout_width="350dp"
+        android:weightSum="20"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="2dp"
         android:id="@+id/addRev"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:layout_height="wrap_content">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="12dp"
+            android:layout_margin="8dp"
             android:id="@+id/userReview"
             android:inputType="text"
-            android:layout_weight="8"
+            android:layout_weight="15"
             android:hint="Add your review here" />
 
         <Button
-            android:layout_width="55dp"
-            android:layout_margin="12dp"
-            android:layout_height="42dp"
-            android:layout_weight="2"
+            android:layout_width="50dp"
+            android:layout_margin="8dp"
+            android:layout_height="34dp"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"
             android:id="@+id/add"
             android:background="@drawable/send" />
     </LinearLayout>
+
+    <Button
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="18dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/heart"
+        android:id="@+id/heart"
+        android:layout_toEndOf="@id/addRev"
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>
